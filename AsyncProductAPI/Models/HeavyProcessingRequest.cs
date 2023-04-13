@@ -1,6 +1,6 @@
 namespace AsyncProductAPI.Models
 {
-    public class ListingRequest
+    public class HeavyProcessingRequest
     {
         public int Id { get; set; }
         public string? RequestBody { get; set; }

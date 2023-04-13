@@ -2,6 +2,7 @@
 using AsyncProductAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AsyncProductAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230413123841_sqlite_migration_955")]
+    partial class sqlite_migration_955
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.5");
@@ -37,7 +40,7 @@ namespace AsyncProductAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("HeavyProcessingRequests");
+                    b.ToTable("ListingRequests");
                 });
 #pragma warning restore 612, 618
         }

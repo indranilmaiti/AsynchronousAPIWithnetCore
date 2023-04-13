@@ -10,6 +10,6 @@ namespace AsyncProductAPI.Data
             
         }
 
-        public DbSet<ListingRequest> ListingRequests => Set<ListingRequest>();
+        public DbSet<HeavyProcessingRequest> HeavyProcessingRequests => Set<HeavyProcessingRequest>();
     }
 }
