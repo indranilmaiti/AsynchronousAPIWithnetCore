@@ -33,8 +33,8 @@ This solution uses sqllite DB, which is attached to the solution.
 	}
 > this returns estimated time of completion and requestID
 - status api(HttpGet)
-https://localhost:7201/Status/ProcessingStatus/\<requestID\>
+https://localhost:7201/Status/ProcessingStatus/<requestID\>
 > gets the current status if not completed else redirect to final endpoint
 - final api (HttpGet)
-https://localhost:7201/final/GetProcessedOutput/\<requestID\>
+https://localhost:7201/final/GetProcessedOutput/<requestID\>
 > get the response when all processing is completed
