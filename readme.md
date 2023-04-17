@@ -11,7 +11,7 @@ sequenceDiagram
 Client ->> Start: Request
 Start -->> Client: Response(Estimated Time and requestId)
 Client ->> Status: Request(requestId)
-Status -->> Client: Response(Estimated Time or redirecturl)
+Status -->> Client: Response(New Estimated Time or redirecturl)
 Client ->> Final: Request(requestId)
 Final -->> Client: Response(Final Processing Status)
 
